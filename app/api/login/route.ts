@@ -14,7 +14,7 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import { hashPassword } from "@/lib/crypto";
+import { hashPassword } from "../../../lib/crypto";
 import { findUser } from "@/lib/db";
 
 export async function POST(req: NextRequest) {
