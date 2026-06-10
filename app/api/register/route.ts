@@ -14,7 +14,7 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import { generateSalt, hashPassword } from "@/lib/crypto";
+import { generateSalt, hashPassword, checkPasswordStrength } from "../../../lib/crypto";
 import { createUser, userExists } from "@/lib/db";
 import { evaluatePassword } from "@/lib/passwordStrength";
 
