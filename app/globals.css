@@ -7,8 +7,7 @@ body {
   margin: 0;
   min-height: 100%;
   font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-  background-color: #163d32;
-  color: #1a2e2a;
+  background: #163d32;
 }
 
 .auth-page {
@@ -19,7 +18,7 @@ body {
 .auth-left {
   width: 50%;
   background: #f4f8f7;
-  padding: 48px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,7 +26,7 @@ body {
 
 .brand {
   margin: 0;
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 800;
   color: #1a2e2a;
 }
@@ -38,11 +37,11 @@ body {
 }
 
 .hero-text h1 {
-  max-width: 480px;
-  font-size: 48px;
-  line-height: 1.1;
+  max-width: 500px;
   margin: 0;
   color: #1a2e2a;
+  font-size: 52px;
+  line-height: 1.1;
 }
 
 .hero-text h1 span {
@@ -50,39 +49,40 @@ body {
 }
 
 .hero-text p {
-  max-width: 380px;
-  margin-top: 18px;
+  max-width: 390px;
   color: #6b7f79;
   font-size: 18px;
+  margin-top: 18px;
 }
 
 .copyright {
-  font-size: 14px;
   color: #6b7f79;
+  font-size: 14px;
 }
 
 .auth-right {
   width: 50%;
+  min-height: 100vh;
   background: #163d32;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 32px;
+  padding: 35px;
 }
 
 .auth-card {
   width: 100%;
   max-width: 430px;
-  background: white;
+  background: #ffffff;
   border-radius: 20px;
   padding: 40px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.28);
 }
 
 .auth-card h2 {
   margin: 0;
-  font-size: 28px;
   color: #1a2e2a;
+  font-size: 28px;
 }
 
 .card-subtitle {
@@ -100,10 +100,10 @@ form {
 
 label {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
+  color: #1a2e2a;
   font-size: 14px;
   font-weight: 600;
-  color: #1a2e2a;
 }
 
 input {
@@ -123,6 +123,7 @@ input:focus {
 button {
   border: none;
   cursor: pointer;
+  font-family: inherit;
 }
 
 button[type="submit"] {
@@ -131,22 +132,60 @@ button[type="submit"] {
   color: white;
   padding: 13px;
   border-radius: 10px;
-  font-weight: 700;
   font-size: 15px;
+  font-weight: 700;
 }
 
 button[type="submit"]:hover {
   background: #159684;
 }
 
-p button {
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.switch-text {
+  margin-top: 18px;
+  text-align: center;
+  color: #6b7f79;
+  font-size: 14px;
+}
+
+.switch-text button {
   background: transparent;
   color: #1db9a5;
   font-weight: 700;
 }
 
-ul {
-  margin-top: 8px;
+.message {
+  text-align: center;
+  color: #1a2e2a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.meter-bar {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.meter-fill {
+  height: 100%;
+  background: #1db9a5;
+  transition: width 0.3s;
+}
+
+.meter p {
+  margin: 8px 0;
+  color: #1a2e2a;
+  font-size: 13px;
+}
+
+.meter ul {
+  margin: 0;
   padding-left: 18px;
   color: #6b7f79;
   font-size: 13px;
@@ -163,6 +202,5 @@ ul {
 
   .auth-right {
     width: 100%;
-    min-height: 100vh;
   }
 }
