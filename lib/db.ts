@@ -12,7 +12,7 @@
  */
 
 import type { RowDataPacket } from "mysql2";
-import { ensureDbReady, getPool } from "@/lib/mysql";
+import { ensureDbReady, getPool } from "./mysql";
 
 export interface UserRecord {
   username: string;
