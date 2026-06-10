@@ -1,15 +1,14 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@source "../app";
-@source "../components";
-
-@theme {
-  --color-sea-green: #163d32;
-  --color-sea-green-dark: #0f2a22;
-  --color-sea-teal: #1db9a5;
-  --color-sea-teal-dark: #159684;
-  --color-sea-ink: #1a2e2a;
-  --color-sea-muted: #6b7f79;
+:root {
+  --sea-green: #163d32;
+  --sea-green-dark: #0f2a22;
+  --sea-teal: #1db9a5;
+  --sea-teal-dark: #159684;
+  --sea-ink: #1a2e2a;
+  --sea-muted: #6b7f79;
 }
 
 * {
@@ -23,6 +22,30 @@ body {
   font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
   background-color: #163d32;
   color: #1a2e2a;
+}
+
+.text-sea-ink {
+  color: var(--sea-ink);
+}
+
+.text-sea-teal {
+  color: var(--sea-teal);
+}
+
+.text-sea-muted {
+  color: var(--sea-muted);
+}
+
+.bg-sea-green {
+  background-color: var(--sea-green);
+}
+
+.bg-sea-green-dark {
+  background-color: var(--sea-green-dark);
+}
+
+.bg-sea-teal {
+  background-color: var(--sea-teal);
 }
 
 svg {
