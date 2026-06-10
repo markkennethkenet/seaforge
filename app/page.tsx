@@ -5,6 +5,7 @@ import RegisterForm from "../components/RegisterForm";
 import LoginForm from "../components/LoginForm";
 import SeaForgeLogo from "../components/SeaForgeLogo";
 import AuthIllustration from "../components/AuthIllustration";
+
 type Tab = "register" | "login";
 
 export default function Home() {
