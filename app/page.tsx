@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import RegisterForm from "@/components/RegisterForm";
-import LoginForm from "@/components/LoginForm";
-import SeaForgeLogo from "@/components/SeaForgeLogo";
-import AuthIllustration from "@/components/AuthIllustration";
+import RegisterForm from "../components/RegisterForm";
+import LoginForm from "../components/LoginForm";
+import SeaForgeLogo from "../components/SeaForgeLogo";
+import AuthIllustration from "../components/AuthIllustration";
 
 type Tab = "register" | "login";
 
