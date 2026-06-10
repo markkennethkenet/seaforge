@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@source "../app";
+@source "../components";
+
+@theme {
+  --color-sea-green: #163d32;
+  --color-sea-green-dark: #0f2a22;
+  --color-sea-teal: #1db9a5;
+  --color-sea-teal-dark: #159684;
+  --color-sea-ink: #1a2e2a;
+  --color-sea-muted: #6b7f79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background-color: #163d32;
+  color: #1a2e2a;
+}
+
+svg {
+  flex-shrink: 0;
+}
